@@ -1,5 +1,6 @@
 # Operaciones con Arrays
-Generalmente los Numpy arrays son más eficientes que las listas. Una de las razones es que te permiten hacer operaciones con los elementos. (element-wise). Una operación con un elemento (element-wise) te permite correr rápidamente una operación como una suma, en cada elemento de un array. Comparemos cómo añadir un número a cada valor en una Lista versus a un NumPy array
+
+Generalmente los Numpy arrays son más eficientes que las listas. Una de las razones es que te permiten hacer operaciones con los elementos. (element-wise). Una operación con un elemento (element-wise) te permite correr rápidamente una operación como una suma, en cada elemento de un array. Comparemos cómo añadir un número a cada valor en una Lista versus a un NumPy array.
 
 ```python
 # usando un ciclo for para sumar 3 a cada elemento
@@ -74,6 +75,7 @@ Respuesta
 ```
 
 ## Operaciones comunes
+
 Como vimos, las operaciones sobre cada elemento más comunes son sumar, restar, multiplicar, módulos y exponenciales.
 
 ```python
@@ -101,6 +103,7 @@ a + b
 ```
 
 ### ¿Qué pasa si es de otro largo el array?
+
 ¿Qué pasa cuando aplicamos una operación entre dos arrays de una dimensión (1-D) con diferentes largos?
 * Tendremos un mensaje de error, específicamente un `ValueError`
 * La ejecución trata de emparejar desde el primero hasta el último elemento

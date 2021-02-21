@@ -1,4 +1,5 @@
 # Arrays de Dos Dimensiones
+
 En Python podemos crear Listas que contienen otras Listas. Similarmente en NumPy podemos crear array de arrays. Si los arrays que componen nuestro array más grande son todos del mismo tamaño, entonces tienen un nombre especial: un array de dos dimensiones.
 
 Tenemos arrays de 1-D separados
@@ -19,6 +20,7 @@ np.array([[92, 94, 88, 91, 87],
 Por ejemplo, aquí cada fila representa un test, y cada columna representa un estudiante. Esto nos permite guardar todos nuestros datos en un único array sin perder el orden. Como ya mencionamos, un array 2-D es un array de arrays donde cada array tiene el mismo número de elementos.
 
 ## No son arrays de dos dimensiones
+
 Estos son algunos ejemplos de arrays que no son de dos dimensiones:
 
 En el siguiente ejemplo el código corre, pero no creará un array de dos dimensiones, porque las listas tienen diferente número de elementos:
@@ -36,6 +38,7 @@ np.array([29, 49, 6],
 ```
 
 ## Operaciones entre 1-D y 2-D
+
 ¿Podemos correr operaciones entre arrays de una dimensión (1-D) y arrays de dos dimensiones (2-D)?
 
 * Si. NumPy correrá la operación en el array 1-D con cada fila del array 2-D individualmente
@@ -57,6 +60,7 @@ array([[10, 10],
 ```
 
 ## Seleccionando Elementos 1-D
+
 NumPy nos permite seleccionar elementos de un array usando sus índices
 
 ```python
@@ -88,6 +92,7 @@ print(a[0:5:2])
 ```
 
 ## Seleccionar Elementos en 2-D
+
 Es muy similar a la selección de elementos en un array 1-D, solo que tenemos dos índices por seleccionar. La sintaxis para seleccionar elementos de un array 2-D es: `a[fila, columna]`, donde `a` es el array.
 
 Es importante notar que cuando trabajamos con arrays que tienen más de una dimensión, las relaciones entre el interior de los arrays es definido en términos de ejes (axes).
@@ -124,6 +129,7 @@ a[0:2,0]
 ```
 
 ## Operaciones Lógicas en Array
+
 Otra cosa útil que puede hacer los arrays de NumPy es correr operaciones lógicas por cada elemento (element-wise). Supongamos que queremos saber cuántos elementos de un array son mayores que 5. Podemos hacer esto fácilmente y evaluar si es `True` por cada elemento del array sin necesidad de tener que usar un ciclo `for` para ello.
 
 ```python
